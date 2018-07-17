@@ -1,0 +1,232 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+  integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+  crossorigin="anonymous">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+
+.backgroundspinner {
+  background-color: black;
+}
+@keyframes spin {
+0% {transform: translate(18px,18px) rotate(0) scale(1);}
+25% {transform: translate(-18px,18px) rotate(-90deg) scale(0.5);}
+50% {transform: translate(-18px,-18px) rotate(-180deg) scale(1);}
+75% {transform: translate(18px,-18px) rotate(-270deg) scale(0.5);}
+100% {transform: translate(18px,18px) rotate(-360deg) scale(1);}
+}
+#spinner1 {
+  animation: spin 1.7s infinite;
+  infinite;
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  height: 15px;
+  width: 15px;
+  background-color: #886000;
+}
+
+@keyframes spin2 {
+0% {transform: translate(-18px,-18px);}
+25% {transform: translate(18px,-18px) rotate(-90deg) scale(0.5);}
+50% {transform: translate(18px,18px) rotate(-180deg) scale(1);}
+75% {transform: translate(-18px,18px) rotate(-270deg) scale(0.5);}
+100% {transform: translate(-18px,-18px) rotate(-360deg) scale(1);}
+}
+#spinner2 {
+  animation: spin2 1.7s infinite;
+  infinite;
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  height: 15px;
+  width: 15px;
+  background-color: #886000;
+}
+
+
+/*Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { opacity:0 }
+  to { opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ opacity:0 }
+  to { opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+
+body{
+    background-image:  url("  IMMAGINI/PLAYER2.jpg");
+    background-color: black;
+    background-size: 35em;
+    background-position:right;
+    background-repeat: no-repeat;
+  }
+
+h1 {
+  color: #886000;
+  font-family: "Paysley Sports" ;
+  font-size: 65px;
+  letter-spacing: 1px;
+  margin-left: -400px;
+  margin-top:280px;
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@font-face {
+    font-family: "Paysley Sports";
+    src: url("Paysley Sports.ttf");
+}
+.customfont1 {
+    font-family: "Paysley Sports";
+}
+
+
+.posizione1 {position: absolute; transform: translate(-50% , -50%); left: -200px; top: 0px;}
+.posizione2 {position: absolute; transform: translate(-50% , -50%); left: -120px; top: 0px;}
+.posizione3 {position: absolute; transform: translate(-50% , -50%); left: -65px; top: 0px;}
+.posizione4 {position: absolute; transform: translate(-50% , -50%); left: -60px; top: 0px;}
+
+#multiCollapseExample1 {
+  transform: translate(-50% , -50%);
+  width: 638px;
+  margin-top: 19.1em;
+  margin-left: -39.4em;
+}
+
+#multiCollapseExample2 {
+  transform: translate(-50% , -50%);
+  width: 638px;
+  margin-top: -26.4em;
+  margin-left: -0.3em;
+}
+
+.btn-primary{
+color: #886000;
+font-family: "UniversLTstd" ;
+font-style: italic;
+border-color: transparent;
+position: relative;
+-webkit-animation-name: animatebottom;
+-webkit-animation-duration: 1s;
+animation-name: animatebottom;
+animation-duration: 1s
+}
+
+@font-face {
+    font-family: "UniversLTstd";
+    src: url("UniversLTStd-CnObl.otf");
+}
+.customfont2 {
+    font-family: "UniversLTstd";
+}
+
+.btn{
+  background-color: transparent;
+  border: none;
+  outline-color: transparent;
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+.btn:hover{
+  background-color: transparent;
+  border: none;
+}
+
+a {color: #886000;}
+.misurebottone { height: 36px; width: 8em;}
+
+a:hover {color: white; text-decoration: none;}
+
+.proporzione { height: 380px; width: 300px;}
+
+</style>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="spinner1"></div>
+<div id="spinner2"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+  <h1 class="customfont1">LORENZO LEO</h1>
+  <button class="btn btn-primary posizione1 misurebottone customfont2" type="button">
+  <a href="PROGETTIPERSONALI.html">PROGETTI PERSONALI</a>
+
+  <button class="btn btn-primary posizione2 misurebottone customfont2" type="button">
+  <a href="PROGETTIPOLIMI.html">PROGETTI POLIMI</a>
+
+  <button class="btn btn-primary posizione3 misurebottone customfont2" type="button">
+  <a href="CV.pdf">CURRICULUM</a>
+
+  <button class="btn btn-primary posizione4 misurebottone customfont2" type="button">
+  <a href="mailto:lorenzoleo044@gmail.com">CONTATTI</a>
+
+  <div class="row">
+  <div class="collapse multi-collapse" id="multiCollapseExample1">
+  <div class="card card-body">
+  <img src="IMMAGINI/PLAYER2.jpg" alt="PLAYER2" class="proporzione">
+  </div>
+  </div>
+
+  <div class="col">
+  <div class="collapse multi-collapse" id="multiCollapseExample2">
+  <div class="card card-body">
+  <img src="IMMAGINI/PLAYER2.jpg" alt="PLAYER2" class="proporzione">
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+</head>
+</body>
+<script>
+    var myVar;
+
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+      document.getElementById("spinner1").style.display = "none";
+      document.getElementById("spinner2").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script> $('.carousel').carousel({interval: 10}) </script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
